@@ -7,7 +7,8 @@
   "author": "John Hotterbeekx <john.online@hotterbeekx.nl>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel index.html --open"
+    "start": "parcel index.html --open",
+    "build": "rimraf dist && parcel build index.html"
   },
   "dependencies": {
     "@material-ui/core": "^3.9.3",
@@ -16,6 +17,7 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.3"
+    "parcel-bundler": "^1.12.3",
+    "rimraf": "^2.6.3"
   }
 }
