@@ -1,0 +1,19 @@
+{
+  "name": "online-dice-tool",
+  "version": "1.0.0",
+  "description": "Website that allows you to play your favorite games when you don't have any actual dice.",
+  "main": "index.js",
+  "repository": "https://github.com/JHotterbeekx/online-dice-tool.git",
+  "author": "John Hotterbeekx <john.online@hotterbeekx.nl>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html --open"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}
