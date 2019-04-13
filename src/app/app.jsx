@@ -32,8 +32,14 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <Menu menuItems={diceSets.map(set => set.title)} onMenuSelected={(title) => this.onMenuSelected(title)} />
-        <DiceGrid dice={sidesToDice(diceSets.find(set => set.title === this.state.activeSet).diceSides)} />
+        <Menu 
+          menuItems={diceSets.map(set => set.title)} 
+          onMenuSelected={(title) => this.onMenuSelected(title)} 
+        />
+        <DiceGrid 
+          dice={sidesToDice(diceSets.find(set => set.title === this.state.activeSet).diceSides)} 
+          title={this.state.activeSet}
+        />
       </div>
     );
   }

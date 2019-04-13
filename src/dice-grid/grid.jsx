@@ -11,7 +11,7 @@ const styles = {
   },
 }
 
-function DiceGrid({ classes, dice }) {
+function DiceGrid({ classes, dice, title }) {
   return (
     <Grid container className={classes.root}>
       <Grid item xs={12}>
@@ -23,7 +23,7 @@ function DiceGrid({ classes, dice }) {
           justify='center'
         >
           {dice.map(die => (
-            <Grid key={`${die.sides}-${die.title}`} item>
+            <Grid key={`${title}-${die.sides}-${die.title}`} item>
               <Dice title={die.title} sides={die.sides} />
             </Grid>
           ))}
@@ -35,6 +35,7 @@ function DiceGrid({ classes, dice }) {
 
 DiceGrid.propTypes = {
   classes: PropTypes.object.isRequired,
+  title: PropTypes.string,
   dice: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,

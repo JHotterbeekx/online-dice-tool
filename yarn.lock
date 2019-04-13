@@ -4554,9 +4554,9 @@ rc@^1.2.7:
     strip-json-comments "~2.0.1"
 
 react-dice-roller@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/react-dice-roller/-/react-dice-roller-1.0.4.tgz#61e65918e5eb621a739fe85a68719c85dbbace99"
-  integrity sha512-bQpYsceb/zkg6fwGVF/pxqouXJPkKtOCgu9fjcHoRFh0CY/9X7Z+gndf9HUxI8J4mWzC2HuhriYBM0UemG4zrw==
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-dice-roller/-/react-dice-roller-1.0.5.tgz#6518a1af896eaac46fecd88b31cbf8fd96ec81b0"
+  integrity sha512-lCPcgyG2nAoolx9U6VDgGpet7DqyutYlhxWEjDc+9NyYjYhifCI8geG2Fkb3pFwLfLJPlVRGl1vufbJVFPcNlw==
   dependencies:
     "@babel/core" "^7.4.3"
     "@babel/preset-env" "^7.4.3"
