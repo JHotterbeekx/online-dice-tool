@@ -12,14 +12,14 @@ const styles = {
   },
 }
 
-function Dice({ classes, title }) {
+function Dice({ classes, title, sides }) {
   return (
     <Card className={classes.card}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           {title}
         </Typography>
-        <ReactDiceRoller />
+        <ReactDiceRoller sides={sides} />
       </CardContent>
     </Card>
   );
@@ -27,6 +27,7 @@ function Dice({ classes, title }) {
 
 Dice.propTypes = {
   title: PropTypes.string.isRequired,
+  sides: PropTypes.number.isRequired,
   classes: PropTypes.object.isRequired,
 };
 
