@@ -7,6 +7,7 @@ import Dice from '../dice/dice';
 const styles = {
   root: {
     flexGrow: 1,
+    marginTop: 20,
   },
 }
 
