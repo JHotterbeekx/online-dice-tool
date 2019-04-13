@@ -1,12 +1,19 @@
 import React from 'react';
-import Dice from '../dice/dice';
+import DiceGrid from '../dice-grid/grid';
+
+const dice = [
+  { title: 'D6', sides: 6 },
+  { title: 'D8', sides: 8 },
+  { title: 'D10', sides: 10 },
+  { title: 'D12', sides: 12 },
+
+];
+
 
 export default function() {
   return (
     <div>
-      <Dice title="D6" />
-      <Dice title="D8" />
-      <Dice title="D10" />
+      <DiceGrid dice={dice} />
     </div>
   );
 }
